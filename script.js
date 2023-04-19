@@ -1,5 +1,10 @@
-function difference(num1, num2) {
-    return num1 - num2;
+const arr = [1, 2, 3, 4, 5, 6, 7];
+let sum = 0;
+
+for (let i = 0; i < arr.length; i++) {
+  sum += arr[i];
 }
-let result = difference(10, 5);
-console.log(result);
+
+const result = document.createElement("p");
+result.textContent = `The sum of the array elements is ${sum}.`;
+document.body.appendChild(result);
